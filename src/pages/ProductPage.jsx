@@ -1,6 +1,7 @@
 import React, {useEffect, useState} from 'react';
 import ProductList from "../components/ProductList/ProductList";
 import Preloader from "../components/Preloader/Preloader";
+import FilteredProductList from "../components/FilteredProductList/FilteredProductList";
 
 const ProductPage = props => {
     const [products, updateProducts] = useState([]);
@@ -23,7 +24,8 @@ const ProductPage = props => {
         <div className="container">
             <h2>Products</h2>
             {isLoading && <Preloader/>}
-            <ProductList products={products}></ProductList>
+
+            <FilteredProductList products={products}/>
         </div>
     );
 };
