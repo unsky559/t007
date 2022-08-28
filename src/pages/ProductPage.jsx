@@ -7,7 +7,7 @@ const ProductPage = props => {
     const [isLoading, updateLoading] = useState(true);
 
     useEffect(() => {
-        const request = fetch(`${window.origin}/products.json`);
+        const request = fetch(`${window.location.href}/products.json`);
 
         request
             .then((req) => {
