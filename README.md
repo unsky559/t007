@@ -1,7 +1,6 @@
 # t007
 
-Test task.
-
+https://goog.men/p/t007/
 
 
 ## Available Scripts
